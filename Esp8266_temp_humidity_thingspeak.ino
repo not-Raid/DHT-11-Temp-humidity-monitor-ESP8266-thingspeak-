@@ -3,14 +3,15 @@
 #include <DHT11.h>
 
 // Primary and Secondary WiFi Credentials
-const char* ssid_primary = "bruuh";        // Replace with your primary WiFi SSID
-const char* password_primary = "95750163"; // Replace with your primary WiFi Password
-const char* ssid_secondary = "Samima Khatun"; // Replace with your secondary WiFi SSID (with space)
-const char* password_secondary = "19900000"; // Replace with your secondary WiFi Password
+const char* ssid_primary = "WIFI_NAME";        // Replace with your primary WiFi SSID
+const char* password_primary = "WIFI_PASSOWRD"; // Replace with your primary WiFi Password
+//if u need another wifi in case the 1st one fails, uncheck the 8 and 9 line's code.
+//const char* ssid_secondary = "secondary_wifi"; // Replace with your secondary WiFi SSID (with space)
+//const char* password_secondary = "secondary_wifi_pass"; // Replace with your secondary WiFi Password
 
 // ThingSpeak API
 const char* server = "http://api.thingspeak.com/update";
-const char* apiKey = "D9TPKQT6T5RI52B2"; // Replace with your ThingSpeak API key
+const char* apiKey = "thingspeak_write_api"; // Replace with your ThingSpeak API key
 
 // DHT11 sensor setup
 #define DHT_PIN 2 // GPIO2 (D4 on NodeMCU)
